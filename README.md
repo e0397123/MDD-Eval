@@ -8,7 +8,7 @@ conda activate tf1-nv
 ```
 ## Resources
 Download data, checkpoints, libray and tools at <br />
-<br />
+https://www.dropbox.com/s/r5eu8tvlmqclyko/resources.zip?dl=0<br />
 unzip the file and put everything under the current folder
 
 ## Setup Tool

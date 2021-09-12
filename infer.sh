@@ -1,10 +1,9 @@
 #!/bin/bash
 
 export CUDA_VISIBLE_DEVICES=7
-
-BERT_PATH=library/full_tf_lm
-DATA_PATH=data/evaluation_data
-CKPT_PATH='checkpoints/run_234567/'
+export BERT_PATH=library/full_tf_lm
+export DATA_PATH=data/evaluation_data
+export CKPT_PATH='checkpoints/run_345678/'
 
 for i in "dailydialog" "persona" "empathetic" "topical" "movie" "twitter"; do
     echo "$i"

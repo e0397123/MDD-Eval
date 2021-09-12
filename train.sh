@@ -1,15 +1,9 @@
 #!/bin/bash
 
-#SBATCH --job-name=train
-#SBATCH -n 1
-#SBATCH --gres=gpu:1
-#SBATCH -p new
-#SBATCH -w ttnusa11
-#SBATCH --output=train.log
-
-BERT_PATH=library/full_tf_lm
-DATA_PATH=data/combine
-SEED=123456
+export CUDA_VISIBLE_DEVICES=7
+export BERT_PATH=library/full_tf_lm
+export DATA_PATH=data/combine
+export SEED=555555
 
 python3 train.py \
 	--data_dir=${DATA_PATH} \
