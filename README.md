@@ -17,16 +17,16 @@ cd tools/best_checkpoint_copier
 python setup install
 ```
 
-### train
+### Train
 ```
 bash train.sh
 ```
 
-### score the evaluation data
+### Score the Evaluation Data
 ```
 bash eval.sh
 ```
 
-### correlation analysis
+### Correlation Analysis
 see the code in evaluation_notebook.ipynb
 
