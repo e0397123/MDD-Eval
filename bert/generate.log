@@ -1,0 +1,1276 @@
+WARNING:tensorflow:From /home/chen/projects/dialogue-research/ACL2021/lib/bert/optimization.py:87: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From run_pretraining.py:493: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From run_pretraining.py:407: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W1201 19:14:09.383902 140640026961728 module_wrapper.py:139] From run_pretraining.py:407: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+WARNING:tensorflow:From run_pretraining.py:407: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+W1201 19:14:09.384177 140640026961728 module_wrapper.py:139] From run_pretraining.py:407: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+WARNING:tensorflow:From /home/chen/projects/dialogue-research/ACL2021/lib/bert/modeling.py:95: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+W1201 19:14:09.384555 140640026961728 module_wrapper.py:139] From /home/chen/projects/dialogue-research/ACL2021/lib/bert/modeling.py:95: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+WARNING:tensorflow:From run_pretraining.py:414: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+W1201 19:14:09.529215 140640026961728 module_wrapper.py:139] From run_pretraining.py:414: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+WARNING:tensorflow:From run_pretraining.py:418: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+W1201 19:14:09.544309 140640026961728 module_wrapper.py:139] From run_pretraining.py:418: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+WARNING:tensorflow:From run_pretraining.py:420: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+W1201 19:14:09.603577 140640026961728 module_wrapper.py:139] From run_pretraining.py:420: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+INFO:tensorflow:*** Input Files ***
+I1201 19:14:09.603783 140640026961728 run_pretraining.py:420] *** Input Files ***
+INFO:tensorflow:  ../../finetuned_lm/dataset/train.tfrecord
+I1201 19:14:09.603916 140640026961728 run_pretraining.py:422]   ../../finetuned_lm/dataset/train.tfrecord
+INFO:tensorflow:  ../../finetuned_lm/dataset/valid.tfrecord
+I1201 19:14:09.604026 140640026961728 run_pretraining.py:422]   ../../finetuned_lm/dataset/valid.tfrecord
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W1201 19:14:09.604224 140640026961728 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7fe8e02aadd0>) includes params argument, but params are not passed to Estimator.
+W1201 19:15:56.571489 140640026961728 estimator.py:1994] Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7fe8e02aadd0>) includes params argument, but params are not passed to Estimator.
+INFO:tensorflow:Using config: {'_model_dir': '../../finetuned_lm/dnli_org_finetuned', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': 2000, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': None, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7fe8e0281b50>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=1000, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': None}
+I1201 19:15:56.594812 140640026961728 estimator.py:212] Using config: {'_model_dir': '../../finetuned_lm/dnli_org_finetuned', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': 2000, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': None, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7fe8e0281b50>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=1000, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': None}
+INFO:tensorflow:_TPUContext: eval_on_tpu True
+I1201 19:15:56.595342 140640026961728 tpu_context.py:220] _TPUContext: eval_on_tpu True
+WARNING:tensorflow:eval_on_tpu ignored because use_tpu is False.
+W1201 19:15:56.595604 140640026961728 tpu_context.py:222] eval_on_tpu ignored because use_tpu is False.
+INFO:tensorflow:***** Running training *****
+I1201 19:15:56.595757 140640026961728 run_pretraining.py:459] ***** Running training *****
+INFO:tensorflow:  Batch size = 64
+I1201 19:15:56.595876 140640026961728 run_pretraining.py:460]   Batch size = 64
+WARNING:tensorflow:From /home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+W1201 19:15:56.899259 140640026961728 deprecation.py:506] From /home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:From /home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W1201 19:15:56.899999 140640026961728 deprecation.py:323] From /home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From run_pretraining.py:337: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+W1201 19:15:56.913422 140640026961728 module_wrapper.py:139] From run_pretraining.py:337: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING:tensorflow:From run_pretraining.py:368: parallel_interleave (from tensorflow.contrib.data.python.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.parallel_interleave(...)`.
+W1201 19:15:56.919584 140640026961728 deprecation.py:323] From run_pretraining.py:368: parallel_interleave (from tensorflow.contrib.data.python.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.parallel_interleave(...)`.
+WARNING:tensorflow:From /home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/contrib/data/python/ops/interleave_ops.py:77: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.experimental.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.experimental_determinstic`.
+W1201 19:15:56.919750 140640026961728 deprecation.py:323] From /home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/contrib/data/python/ops/interleave_ops.py:77: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.experimental.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.experimental_determinstic`.
+WARNING:tensorflow:From run_pretraining.py:385: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+W1201 19:15:57.029245 140640026961728 deprecation.py:323] From run_pretraining.py:385: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+WARNING:tensorflow:From /home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/contrib/data/python/ops/batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+W1201 19:15:57.029418 140640026961728 deprecation.py:323] From /home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/contrib/data/python/ops/batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+WARNING:tensorflow:From /home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+W1201 19:15:57.692287 140640026961728 module_wrapper.py:139] From /home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+WARNING:tensorflow:From run_pretraining.py:400: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W1201 19:15:57.843122 140640026961728 deprecation.py:323] From run_pretraining.py:400: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+INFO:tensorflow:Calling model_fn.
+I1201 19:15:57.884753 140640026961728 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Running train on CPU
+I1201 19:15:57.884988 140640026961728 tpu_estimator.py:3124] Running train on CPU
+INFO:tensorflow:*** Features ***
+I1201 19:15:57.885345 140640026961728 run_pretraining.py:117] *** Features ***
+INFO:tensorflow:  name = input_ids, shape = (64, 60)
+I1201 19:15:57.885487 140640026961728 run_pretraining.py:119]   name = input_ids, shape = (64, 60)
+INFO:tensorflow:  name = input_mask, shape = (64, 60)
+I1201 19:15:57.885594 140640026961728 run_pretraining.py:119]   name = input_mask, shape = (64, 60)
+INFO:tensorflow:  name = masked_lm_ids, shape = (64, 5)
+I1201 19:15:57.885691 140640026961728 run_pretraining.py:119]   name = masked_lm_ids, shape = (64, 5)
+INFO:tensorflow:  name = masked_lm_positions, shape = (64, 5)
+I1201 19:15:57.885784 140640026961728 run_pretraining.py:119]   name = masked_lm_positions, shape = (64, 5)
+INFO:tensorflow:  name = masked_lm_weights, shape = (64, 5)
+I1201 19:15:57.885874 140640026961728 run_pretraining.py:119]   name = masked_lm_weights, shape = (64, 5)
+INFO:tensorflow:  name = next_sentence_labels, shape = (64, 1)
+I1201 19:15:57.885962 140640026961728 run_pretraining.py:119]   name = next_sentence_labels, shape = (64, 1)
+INFO:tensorflow:  name = segment_ids, shape = (64, 60)
+I1201 19:15:57.886049 140640026961728 run_pretraining.py:119]   name = segment_ids, shape = (64, 60)
+WARNING:tensorflow:From /home/chen/projects/dialogue-research/ACL2021/lib/bert/modeling.py:173: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W1201 19:15:57.886303 140640026961728 module_wrapper.py:139] From /home/chen/projects/dialogue-research/ACL2021/lib/bert/modeling.py:173: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /home/chen/projects/dialogue-research/ACL2021/lib/bert/modeling.py:412: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W1201 19:15:57.888050 140640026961728 module_wrapper.py:139] From /home/chen/projects/dialogue-research/ACL2021/lib/bert/modeling.py:412: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+WARNING:tensorflow:From /home/chen/projects/dialogue-research/ACL2021/lib/bert/modeling.py:494: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+W1201 19:15:57.897206 140640026961728 module_wrapper.py:139] From /home/chen/projects/dialogue-research/ACL2021/lib/bert/modeling.py:494: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+WARNING:tensorflow:From /home/chen/projects/dialogue-research/ACL2021/lib/bert/modeling.py:361: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W1201 19:15:58.037808 140640026961728 deprecation.py:506] From /home/chen/projects/dialogue-research/ACL2021/lib/bert/modeling.py:361: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/chen/projects/dialogue-research/ACL2021/lib/bert/modeling.py:678: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W1201 19:15:58.049215 140640026961728 deprecation.py:323] From /home/chen/projects/dialogue-research/ACL2021/lib/bert/modeling.py:678: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W1201 19:15:58.049817 140640026961728 deprecation.py:323] From /home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From run_pretraining.py:150: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+W1201 19:15:59.402944 140640026961728 module_wrapper.py:139] From run_pretraining.py:150: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+WARNING:tensorflow:From run_pretraining.py:165: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+W1201 19:15:59.480302 140640026961728 module_wrapper.py:139] From run_pretraining.py:165: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+INFO:tensorflow:**** Trainable Variables ****
+I1201 19:15:59.899108 140640026961728 run_pretraining.py:167] **** Trainable Variables ****
+INFO:tensorflow:  name = bert/embeddings/word_embeddings:0, shape = (50265, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.899247 140640026961728 run_pretraining.py:173]   name = bert/embeddings/word_embeddings:0, shape = (50265, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/position_embeddings:0, shape = (514, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.899318 140640026961728 run_pretraining.py:173]   name = bert/embeddings/position_embeddings:0, shape = (514, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.899377 140640026961728 run_pretraining.py:173]   name = bert/embeddings/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.899419 140640026961728 run_pretraining.py:173]   name = bert/embeddings/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.899459 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_0/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.899502 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_0/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.899540 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_0/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.899580 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_0/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.899624 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_0/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.899664 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_0/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.899703 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_0/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.899743 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_0/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.899780 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_0/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.899818 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_0/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1201 19:15:59.899855 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_0/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1201 19:15:59.899894 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_0/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.899931 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_0/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.899971 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_0/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.900009 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_0/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.900045 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_0/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.900082 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_1/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.900123 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_1/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.900160 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_1/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.900202 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_1/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.900239 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_1/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.900279 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_1/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.900316 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_1/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.900356 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_1/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.900393 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_1/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.900429 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_1/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1201 19:15:59.900466 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_1/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1201 19:15:59.900506 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_1/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.900543 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_1/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.900583 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_1/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.900620 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_1/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.900657 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_1/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.900694 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_2/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.900733 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_2/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.900770 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_2/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.900811 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_2/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.900848 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_2/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.900887 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_2/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.900924 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_2/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.900964 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_2/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.901001 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_2/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.901038 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_2/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1201 19:15:59.901074 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_2/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1201 19:15:59.901113 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_2/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.901150 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_2/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.901190 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_2/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.901227 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_2/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.901264 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_2/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.901300 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_3/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.901340 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_3/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.901379 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_3/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.901419 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_3/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.901457 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_3/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.901496 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_3/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.901533 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_3/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.901572 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_3/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.901608 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_3/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.901644 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_3/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1201 19:15:59.901681 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_3/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1201 19:15:59.901720 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_3/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.901757 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_3/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.901796 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_3/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.901833 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_3/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.901870 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_3/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.901906 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_4/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.901948 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_4/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.901984 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_4/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.902023 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_4/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.902060 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_4/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.902107 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_4/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.902162 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_4/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.902204 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_4/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.902244 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_4/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.902284 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_4/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1201 19:15:59.902323 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_4/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1201 19:15:59.902365 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_4/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.902404 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_4/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.902446 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_4/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.902486 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_4/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.902525 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_4/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.902564 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_5/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.902609 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_5/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.902649 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_5/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.902691 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_5/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.902730 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_5/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.902771 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_5/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.902811 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_5/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.902852 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_5/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.902892 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_5/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.902931 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_5/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1201 19:15:59.902970 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_5/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1201 19:15:59.903012 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_5/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.903052 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_5/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.903094 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_5/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.903133 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_5/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.903172 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_5/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.903216 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_6/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.903259 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_6/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.903298 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_6/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.903351 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_6/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.903398 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_6/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.903437 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_6/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.903473 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_6/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.903512 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_6/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.903548 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_6/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.903584 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_6/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1201 19:15:59.903621 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_6/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1201 19:15:59.903660 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_6/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.903696 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_6/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.903734 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_6/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.903772 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_6/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.903807 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_6/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.903845 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_7/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.903884 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_7/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.903920 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_7/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.903958 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_7/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.903994 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_7/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.904032 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_7/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.904068 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_7/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.904107 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_7/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.904143 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_7/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.904179 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_7/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1201 19:15:59.904216 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_7/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1201 19:15:59.904255 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_7/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.904291 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_7/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.904330 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_7/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.904366 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_7/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.904404 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_7/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.904440 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_8/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.904478 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_8/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.904514 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_8/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.904553 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_8/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.904589 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_8/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.904627 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_8/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.904663 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_8/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.904701 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_8/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.904737 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_8/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.904773 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_8/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1201 19:15:59.904808 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_8/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1201 19:15:59.904846 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_8/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.904882 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_8/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.904920 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_8/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.904956 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_8/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.904994 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_8/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.905029 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_9/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.905067 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_9/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.905103 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_9/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.905141 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_9/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.905177 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_9/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.905215 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_9/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.905251 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_9/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.905289 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_9/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.905325 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_9/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.905360 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_9/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1201 19:15:59.905396 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_9/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1201 19:15:59.905435 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_9/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.905470 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_9/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.905508 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_9/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.905547 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_9/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.905583 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_9/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.905619 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_10/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.905659 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_10/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.905697 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_10/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.905736 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_10/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.905774 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_10/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.905813 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_10/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.905850 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_10/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.905889 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_10/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.905926 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_10/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.905963 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_10/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1201 19:15:59.906000 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_10/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1201 19:15:59.906040 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_10/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.906077 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_10/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.906145 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_10/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.906186 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_10/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.906225 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_10/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.906265 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_11/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.906308 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_11/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.906348 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_11/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.906390 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_11/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.906430 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_11/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.906473 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_11/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.906513 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_11/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.906555 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_11/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.906595 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_11/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.906635 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_11/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I1201 19:15:59.906674 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_11/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I1201 19:15:59.906716 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_11/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.906755 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_11/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.906800 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_11/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.906840 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_11/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.906879 140640026961728 run_pretraining.py:173]   name = bert/encoder/layer_11/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/pooler/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I1201 19:15:59.906918 140640026961728 run_pretraining.py:173]   name = bert/pooler/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/pooler/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I1201 19:15:59.906960 140640026961728 run_pretraining.py:173]   name = bert/pooler/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = cls/predictions/transform/dense/kernel:0, shape = (768, 768)
+I1201 19:15:59.907014 140640026961728 run_pretraining.py:173]   name = cls/predictions/transform/dense/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = cls/predictions/transform/dense/bias:0, shape = (768,)
+I1201 19:15:59.907068 140640026961728 run_pretraining.py:173]   name = cls/predictions/transform/dense/bias:0, shape = (768,)
+INFO:tensorflow:  name = cls/predictions/transform/LayerNorm/beta:0, shape = (768,)
+I1201 19:15:59.907117 140640026961728 run_pretraining.py:173]   name = cls/predictions/transform/LayerNorm/beta:0, shape = (768,)
+INFO:tensorflow:  name = cls/predictions/transform/LayerNorm/gamma:0, shape = (768,)
+I1201 19:15:59.907165 140640026961728 run_pretraining.py:173]   name = cls/predictions/transform/LayerNorm/gamma:0, shape = (768,)
+INFO:tensorflow:  name = cls/predictions/output_bias:0, shape = (50265,)
+I1201 19:15:59.907212 140640026961728 run_pretraining.py:173]   name = cls/predictions/output_bias:0, shape = (50265,)
+INFO:tensorflow:  name = cls/seq_relationship/output_weights:0, shape = (2, 768)
+I1201 19:15:59.907262 140640026961728 run_pretraining.py:173]   name = cls/seq_relationship/output_weights:0, shape = (2, 768)
+INFO:tensorflow:  name = cls/seq_relationship/output_bias:0, shape = (2,)
+I1201 19:15:59.907313 140640026961728 run_pretraining.py:173]   name = cls/seq_relationship/output_bias:0, shape = (2,)
+WARNING:tensorflow:From /home/chen/projects/dialogue-research/ACL2021/lib/bert/optimization.py:27: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+W1201 19:15:59.907416 140640026961728 module_wrapper.py:139] From /home/chen/projects/dialogue-research/ACL2021/lib/bert/optimization.py:27: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+WARNING:tensorflow:From /home/chen/projects/dialogue-research/ACL2021/lib/bert/optimization.py:32: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+W1201 19:15:59.907895 140640026961728 module_wrapper.py:139] From /home/chen/projects/dialogue-research/ACL2021/lib/bert/optimization.py:32: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+WARNING:tensorflow:From /home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/ops/math_grad.py:1375: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W1201 19:16:00.614253 140640026961728 deprecation.py:323] From /home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/ops/math_grad.py:1375: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+INFO:tensorflow:Done calling model_fn.
+I1201 19:16:15.106563 140640026961728 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I1201 19:16:15.107498 140640026961728 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I1201 19:16:17.217269 140640026961728 monitored_session.py:240] Graph was finalized.
+2020-12-01 19:16:17.217623: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2020-12-01 19:16:22.786355: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3000000000 Hz
+2020-12-01 19:16:22.786688: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56441cee0870 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-12-01 19:16:22.796605: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-12-01 19:16:22.954417: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-12-01 19:16:23.108894: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Quadro RTX 6000 major: 7 minor: 5 memoryClockRate(GHz): 1.77
+pciBusID: 0000:5e:00.0
+2020-12-01 19:16:28.379972: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-12-01 19:16:35.272938: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-12-01 19:16:36.009234: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-12-01 19:16:41.814602: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-12-01 19:16:43.016909: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-12-01 19:16:43.856964: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-12-01 19:16:56.172295: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-12-01 19:16:56.178353: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-12-01 19:16:56.197035: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-12-01 19:16:56.538577: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-12-01 19:16:56.538606: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-12-01 19:16:56.538615: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-12-01 19:16:56.542518: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 21405 MB memory) -> physical GPU (device: 0, name: Quadro RTX 6000, pci bus id: 0000:5e:00.0, compute capability: 7.5)
+2020-12-01 19:16:56.553118: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x564421940d60 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-12-01 19:16:56.553135: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Quadro RTX 6000, Compute Capability 7.5
+INFO:tensorflow:Restoring parameters from ../../finetuned_lm/dnli_org_finetuned/model.ckpt-0
+I1201 19:16:56.556458 140640026961728 saver.py:1284] Restoring parameters from ../../finetuned_lm/dnli_org_finetuned/model.ckpt-0
+WARNING:tensorflow:From /home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/training/saver.py:1069: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+W1201 19:21:19.410297 140640026961728 deprecation.py:323] From /home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/training/saver.py:1069: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+INFO:tensorflow:Running local_init_op.
+I1201 19:21:20.409194 140640026961728 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I1201 19:21:20.605097 140640026961728 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 0 into ../../finetuned_lm/dnli_org_finetuned/model.ckpt.
+I1201 19:21:25.343825 140640026961728 basic_session_run_hooks.py:606] Saving checkpoints for 0 into ../../finetuned_lm/dnli_org_finetuned/model.ckpt.
+2020-12-01 19:21:50.095937: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-12-01 19:22:04.738201: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.738303: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.738364: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.738436: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.738483: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.738528: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.738574: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.738619: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.738664: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.738703: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.738743: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.738783: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.738824: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.738886: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.738939: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.738991: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.739044: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.739100: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.739154: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.739205: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.739257: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.739310: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.739360: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.739412: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.739463: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.739514: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.739566: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.739617: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.739670: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.739722: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.739774: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.739825: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.739877: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.739929: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.739993: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.740045: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.740096: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.740147: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.740201: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.740251: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.740304: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.740359: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.740411: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.740462: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.740515: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.740567: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.740617: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.740670: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.740722: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.740774: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.740825: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.740878: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.740929: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.740981: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.741036: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.741087: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.741139: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.741191: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.741244: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.741295: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.741349: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.741400: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.741451: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.741504: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.741554: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.741605: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.741656: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.741709: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.741760: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.741811: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.741864: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.741915: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.741967: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.742018: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.742071: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.742154: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.742206: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.742257: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.742308: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.742359: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.742412: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.742464: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.742518: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.742569: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.742620: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.742671: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.742724: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.742774: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.742828: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.742879: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.742930: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.742982: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.743033: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.743085: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.743136: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.743193: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.743244: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.743295: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.743346: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.743398: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.743450: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.743501: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.743556: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.743605: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.743658: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.743708: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.743759: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.743810: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.743862: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.743912: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.743964: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.744015: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.744065: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.744117: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.744167: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.744219: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.744276: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.744328: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.744379: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.744431: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.744484: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.744535: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.744585: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.744636: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.744689: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.744740: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.744792: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.744843: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.744894: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.744947: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.744998: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.745050: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.745101: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.745154: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.745205: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.745257: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.745312: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.745375: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.745430: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.745483: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.745537: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.746086: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.746178: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.746239: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.746301: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.746391: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.746452: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.746518: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.746571: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.746617: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.746667: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.746714: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.746843: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.746903: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.746951: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.746994: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.747043: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.747096: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.747139: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.747181: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.747221: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.747261: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.747302: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.747348: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.747387: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.747428: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.747469: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.747511: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.747552: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.747596: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.747637: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.747677: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.747718: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.747758: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.747801: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.747846: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.747886: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.747931: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.747972: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.748012: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.748053: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.748096: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.748140: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.748180: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.748220: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.748259: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.748300: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.748342: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.748386: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.748427: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.748468: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.748508: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.748548: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.748588: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.748631: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.748671: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.748710: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.748755: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.748794: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.748835: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.748880: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.748920: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.748961: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.749001: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.749132: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.844525: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.844713: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.844824: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.844926: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.845022: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.845115: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.845205: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.845336: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.845663: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.845895: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.846169: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.846338: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.846468: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.846782: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.846894: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.846999: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.847096: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.847196: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.847298: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.847397: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.847542: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.847644: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.847742: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.847835: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.847932: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.848028: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.848123: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.848223: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.848317: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.848412: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.848508: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.848624: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.848723: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.848831: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.848938: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.849039: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.849138: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.849238: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.849338: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.849438: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.849540: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.849636: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.849734: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.849880: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.849993: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.850111: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.850218: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.850323: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.850422: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.850510: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.850610: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.850710: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.850812: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.850911: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.851019: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.851117: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.851217: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.851313: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.851399: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.851547: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.851641: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.851737: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.851824: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.851918: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.852015: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.852112: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.852203: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.852297: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.852384: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.852583: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.852692: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.852796: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.852896: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.852998: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.853096: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.853194: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.853292: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.853378: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.853474: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.853559: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.853655: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.853752: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.853839: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.853936: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.854024: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.854137: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.854239: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.854340: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.854438: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.854538: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.854638: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.854736: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.854831: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.854917: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.855016: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.855132: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.855266: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.855368: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.855456: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.855555: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.855641: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.855737: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.855838: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.855938: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.856035: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.856130: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.856217: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.856318: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.856372: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.856434: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.856489: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.856551: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.856606: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.856666: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.856723: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.856790: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.856856: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.856916: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.856979: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.857041: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.857104: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.857191: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.857269: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.857333: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.857393: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.857450: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.857512: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.857574: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.857637: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.857699: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.857762: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.857826: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.857888: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.857952: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.858014: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.858079: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.858155: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.858221: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.858283: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.858344: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.858401: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.858463: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.858519: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.858580: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.858635: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.858777: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.858844: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.858910: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.858983: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.859048: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.859113: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.859174: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.859236: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.859299: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.859361: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.859423: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.859489: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.859551: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.859614: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.859674: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.859735: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.859797: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.859859: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.859922: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.859984: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.860047: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.860109: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.860169: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.860223: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.860284: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.860371: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.860449: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.860512: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.860568: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.860636: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.860693: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.860748: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.860814: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.860870: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.860930: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.860988: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.861048: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.861104: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.861165: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.861222: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.861284: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.861341: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.861402: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.861456: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.861517: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.861571: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.861634: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.861690: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.861750: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.861805: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.861865: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.861919: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.861985: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.862048: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.862121: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.862198: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.862278: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.862343: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.862406: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.862468: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.862524: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.862585: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.862641: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.862702: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.862766: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.862826: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.862882: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.862945: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.863007: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.863066: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.863121: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.863181: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.863244: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.863304: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.863359: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.863419: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.863480: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.863542: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.863601: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.863655: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.863715: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.863771: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.863820: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.863870: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.863919: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.863967: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.864016: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.864070: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.864119: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.864167: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.864217: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.864265: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.864314: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.864374: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.864423: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.864472: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.864519: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.864568: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.864616: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.864667: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.864715: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.864763: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.864811: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.864860: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.864909: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.864961: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.865009: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.865057: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.865105: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.865152: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.865200: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.865250: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.865303: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.865359: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.865408: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.865458: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.865509: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.865557: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.865605: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.865657: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.865706: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.865754: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.865802: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.865850: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.865898: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.865951: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.866000: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.866049: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.866108: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.866158: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.866209: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.866262: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.866311: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.866359: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.866413: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.866463: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.866509: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.866545: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.866578: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.866609: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.866641: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.866672: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.866704: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.866739: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.866770: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.866803: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.866835: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.866867: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.866899: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.866934: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.866966: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.866999: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.867031: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.867064: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.867099: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.867132: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.867168: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.867200: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.867232: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.867263: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.867296: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.867328: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.867361: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.867397: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.867429: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.867462: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.867496: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_ids.  Can't parse serialized Example.
+2020-12-01 19:22:04.867811: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.867877: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_positions.  Can't parse serialized Example.
+2020-12-01 19:22:04.867918: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+2020-12-01 19:22:04.867957: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at example_parsing_ops.cc:240 : Invalid argument: Key: masked_lm_weights.  Can't parse serialized Example.
+ERROR:tensorflow:Error recorded from training_loop: 2 root error(s) found.
+  (0) Invalid argument: {{function_node __inference_tf_data_experimental_map_and_batch_<lambda>_83}} Key: masked_lm_ids.  Can't parse serialized Example.
+	 [[{{node ParseSingleExample/ParseSingleExample}}]]
+	 [[IteratorGetNext]]
+  (1) Invalid argument: {{function_node __inference_tf_data_experimental_map_and_batch_<lambda>_83}} Key: masked_lm_ids.  Can't parse serialized Example.
+	 [[{{node ParseSingleExample/ParseSingleExample}}]]
+	 [[IteratorGetNext]]
+	 [[IteratorGetNext/_4939]]
+0 successful operations.
+0 derived errors ignored.
+E1201 19:22:05.122471 140640026961728 error_handling.py:75] Error recorded from training_loop: 2 root error(s) found.
+  (0) Invalid argument: {{function_node __inference_tf_data_experimental_map_and_batch_<lambda>_83}} Key: masked_lm_ids.  Can't parse serialized Example.
+	 [[{{node ParseSingleExample/ParseSingleExample}}]]
+	 [[IteratorGetNext]]
+  (1) Invalid argument: {{function_node __inference_tf_data_experimental_map_and_batch_<lambda>_83}} Key: masked_lm_ids.  Can't parse serialized Example.
+	 [[{{node ParseSingleExample/ParseSingleExample}}]]
+	 [[IteratorGetNext]]
+	 [[IteratorGetNext/_4939]]
+0 successful operations.
+0 derived errors ignored.
+INFO:tensorflow:training_loop marked as finished
+I1201 19:22:05.122639 140640026961728 error_handling.py:101] training_loop marked as finished
+WARNING:tensorflow:Reraising captured error
+W1201 19:22:05.122699 140640026961728 error_handling.py:135] Reraising captured error
+Traceback (most recent call last):
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/client/session.py", line 1365, in _do_call
+    return fn(*args)
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/client/session.py", line 1350, in _run_fn
+    target_list, run_metadata)
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/client/session.py", line 1443, in _call_tf_sessionrun
+    run_metadata)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: {{function_node __inference_tf_data_experimental_map_and_batch_<lambda>_83}} Key: masked_lm_ids.  Can't parse serialized Example.
+	 [[{{node ParseSingleExample/ParseSingleExample}}]]
+	 [[IteratorGetNext]]
+  (1) Invalid argument: {{function_node __inference_tf_data_experimental_map_and_batch_<lambda>_83}} Key: masked_lm_ids.  Can't parse serialized Example.
+	 [[{{node ParseSingleExample/ParseSingleExample}}]]
+	 [[IteratorGetNext]]
+	 [[IteratorGetNext/_4939]]
+0 successful operations.
+0 derived errors ignored.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run_pretraining.py", line 493, in <module>
+    tf.app.run()
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/absl/app.py", line 299, in run
+    _run_main(main, args)
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/absl/app.py", line 250, in _run_main
+    sys.exit(main(argv))
+  File "run_pretraining.py", line 466, in main
+    estimator.train(input_fn=train_input_fn, max_steps=FLAGS.num_train_steps)
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py", line 3035, in train
+    rendezvous.raise_errors()
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/tpu/error_handling.py", line 136, in raise_errors
+    six.reraise(typ, value, traceback)
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py", line 3030, in train
+    saving_listeners=saving_listeners)
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 370, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1161, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1195, in _train_model_default
+    saving_listeners)
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1494, in _train_with_estimator_spec
+    _, loss = mon_sess.run([estimator_spec.train_op, estimator_spec.loss])
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/training/monitored_session.py", line 754, in run
+    run_metadata=run_metadata)
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/training/monitored_session.py", line 1259, in run
+    run_metadata=run_metadata)
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/training/monitored_session.py", line 1360, in run
+    raise six.reraise(*original_exc_info)
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/training/monitored_session.py", line 1345, in run
+    return self._sess.run(*args, **kwargs)
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/training/monitored_session.py", line 1418, in run
+    run_metadata=run_metadata)
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/training/monitored_session.py", line 1176, in run
+    return self._sess.run(*args, **kwargs)
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/client/session.py", line 956, in run
+    run_metadata_ptr)
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/client/session.py", line 1180, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/client/session.py", line 1359, in _do_run
+    run_metadata)
+  File "/home/chen/anaconda3/envs/tensorflow-1.15/lib/python3.7/site-packages/tensorflow_core/python/client/session.py", line 1384, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: 2 root error(s) found.
+  (0) Invalid argument: {{function_node __inference_tf_data_experimental_map_and_batch_<lambda>_83}} Key: masked_lm_ids.  Can't parse serialized Example.
+	 [[{{node ParseSingleExample/ParseSingleExample}}]]
+	 [[IteratorGetNext]]
+  (1) Invalid argument: {{function_node __inference_tf_data_experimental_map_and_batch_<lambda>_83}} Key: masked_lm_ids.  Can't parse serialized Example.
+	 [[{{node ParseSingleExample/ParseSingleExample}}]]
+	 [[IteratorGetNext]]
+	 [[IteratorGetNext/_4939]]
+0 successful operations.
+0 derived errors ignored.
