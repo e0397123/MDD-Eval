@@ -36,8 +36,6 @@ Full Machine-annotated Data Under Preparation
 
 ### Please cite the following if use code or resources in this repo
 
-## Reference
-
 ```
 @inproceedings{zhang-etal-2021-mdd,
     title = "{MDD}-{E}val: Self-Training on Augmented Data for Multi-Domain Dialogue Evaluation",
