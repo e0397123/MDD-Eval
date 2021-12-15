@@ -33,3 +33,22 @@ see the code in evaluation_notebook.ipynb
 ### Note
 
 Full Machine-annotated Data Under Preparation
+
+### Please cite the following if use code or resources in this repo
+
+## Reference
+
+```
+@inproceedings{zhang-etal-2021-mdd,
+    title = "{MDD}-{E}val: Self-Training on Augmented Data for Multi-Domain Dialogue Evaluation",
+    author = "Zhang, Chen  and
+      D{'}Haro, Luis Fernando  and
+      Friedrichs, Thomas  and
+      Li, Haizhou",
+    booktitle = "Proceedings of the 36th AAAI Conference on Artificial Intelligence",
+    month = March,
+    year = "2022",
+    address = "Online",
+    publisher = "Association for the Advancement of Artificial Intelligence",
+}
+```
