@@ -34,7 +34,7 @@ see the code in evaluation_notebook.ipynb
 
 Full Machine-annotated Data Under Preparation
 
-### Please cite the following if use code or resources in this repo
+### Cite the following if use code or resources in this repo
 
 ```
 @inproceedings{zhang-etal-2021-mdd,
