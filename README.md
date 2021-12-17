@@ -30,7 +30,7 @@ bash eval.sh
 ### Correlation Analysis
 see the code in evaluation_notebook.ipynb
 
-### Note
+### Full Data
 
 Full Machine-annotated Data at https://www.dropbox.com/s/4bnha62u8uuj8ak/mdd_data.zip?dl=0
 
