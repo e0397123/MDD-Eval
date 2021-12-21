@@ -34,6 +34,9 @@ see the code in evaluation_notebook.ipynb
 
 Full Machine-annotated Data at https://www.dropbox.com/s/4bnha62u8uuj8ak/mdd_data.zip?dl=0
 
+PLease cite the dataset paper if you use the respective split of MDD-Data: DailyDialog (Li et al., 2017), 
+EmpatheticDialogues (Rashkin et al., 2019), TopicalChat (Gopalakrishnan et al., 2019), and ConvAI2 (Dinan et al., 2020)
+
 ### Cite the following if use code or resources in this repo
 
 ```
